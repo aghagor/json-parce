@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         contactList = new ArrayList<>();
 
         lv = findViewById(R.id.list_view);
+
+        new GetContacts().execute();
     }
 
     private class GetContacts extends AsyncTask<Void, Void, Void> {
